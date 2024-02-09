@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<Style>
+    #desc h2{
+        color: darkblue;
+    }
+    #child > ol{
+        font-weight: bold;
+    }
+    .Adj +h2{
+        font-style: italic;
+    } 
+    .highlight ~ol{
+        color: green;
+    } 
+    table tr:nth-child(odd) {
+    background-color: lightgray;
+}
+</Style>
+</head>
+<body>
+    <section id="desc">
+        <article>><h2>Heading 2</h2> </article>
+    </section>
+    <nav id="child"><ol>
+        <li>Home</li>
+        <li>About us</li>
+        <li>Contuct us</li>
+    </ol></nav>
+    <div class="Adj">
+        <h2>
+            <p>This is first paragraph</p>
+            <p>This is second paragraph</p>
+        </h2>
+        </div>
+         <div class="highlight">
+            <ol>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+            </ol>
+         </div>
+         <ol>
+            <li>4</li>
+            <li>5</li>
+        </ol>
+        <table>
+            <tr><td> 1st row</td></tr>
+            <tr><td>2nd row </td></tr>
+        </table>
+</body>
+</html>
